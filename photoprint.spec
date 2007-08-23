@@ -2,7 +2,7 @@ Summary:	Photo Print - Prints photos in various layouts and with color managemen
 Name:		photoprint
 Version:	0.3.1
 %define		bordersversion 0.0.1
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL
 Group:		Publishing
 
