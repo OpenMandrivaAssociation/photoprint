@@ -10,8 +10,13 @@ Source0:	http://www.blackfiveservices.co.uk/photoprint_resources/%{name}-%{versi
 Source1:	http://www.blackfiveservices.co.uk/photoprint_resources/photoprint-borders-%{bordersversion}.tar.gz
 Source2:	http://www.blackfiveservices.co.uk/PhotoPrint/Downloads/ProfilingKit.tar.bz2
 Url:		http://www.blackfiveservices.co.uk/PhotoPrint/About.shtml
-BuildRequires:	liblcms-devel, libtiff-devel, libjpeg-devel, libnetpbm-devel
-BuildRequires:	libcups-devel, libgutenprint-devel, libgtk+2.0-devel
+BuildRequires:	lcms-devel
+BuildRequires:	libtiff-devel
+BuildRequires:	libjpeg-devel
+BuildRequires:	libnetpbm-devel
+BuildRequires:	libcups-devel
+BuildRequires:	libgutenprint-devel
+BuildRequires:	libgtk+2.0-devel
 BuildRoot:	%_tmppath/%name-%version
 
 %description
