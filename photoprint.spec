@@ -18,6 +18,7 @@ BuildRequires:	libcups-devel
 BuildRequires:	libgutenprint-devel
 BuildRequires:	libgtk+2.0-devel
 BuildRequires:	desktop-file-utils
+BuildRoot:	%_tmppath/%name-%version
 
 %description
 Photo Print is a utility for printing images via Gutenprint (a
