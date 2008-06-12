@@ -70,11 +70,15 @@ desktop-file-install \
     --dir %{buildroot}%{_datadir}/applications \
     %{buildroot}%{_datadir}/applications/fotoprint.desktop
 
+%if %mdkversion < 200900
 %post
 %update_menus
+%endif
 
+%if %mdkversion < 200900
 %postun
 %clean_menus
+%endif
 
 %clean
 rm -fr %buildroot
