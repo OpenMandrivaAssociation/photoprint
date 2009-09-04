@@ -2,7 +2,7 @@
 
 Name:		photoprint
 Version:	0.3.8
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Prints photos in various layouts and with color management
 License:	GPL
 Group:		Publishing
