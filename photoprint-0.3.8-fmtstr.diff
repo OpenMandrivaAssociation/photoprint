@@ -1,0 +1,11 @@
+--- ./support/generaldialogs.cpp	2008-06-03 23:58:19.000000000 +0200
++++ ./support/generaldialogs.cpp.oden	2011-11-20 11:29:32.721637712 +0100
+@@ -31,7 +31,7 @@ void ErrorMessage_Dialog(const char *mes
+ {
+ 	GtkWidget *dialog = gtk_message_dialog_new (GTK_WINDOW(parent),GtkDialogFlags(0),
+ 		GTK_MESSAGE_ERROR,GTK_BUTTONS_CLOSE,
+-		message);
++		"%s",message);
+ 	gtk_dialog_run (GTK_DIALOG (dialog));
+ 	gtk_widget_destroy (dialog);
+ }

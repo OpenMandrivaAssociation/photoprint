@@ -1,0 +1,33 @@
+--- support/layoutrectangle.h	2008-05-04 20:07:54.000000000 -0400
++++ support/layoutrectangle.h.oden	2011-11-20 05:39:56.240037284 -0500
+@@ -1,6 +1,8 @@
+ #ifndef LAYOUTRECTANGLE_H
+ #define LAYOUTRECTANGLE_H
+ 
++#include <cstdio>
++
+ enum PP_ROTATION
+ {
+ 	PP_ROTATION_AUTO,
+--- ./support/pathsupport.cpp	2008-05-04 20:07:55.000000000 -0400
++++ ./support/pathsupport.cpp.oden	2011-11-20 05:41:30.800037427 -0500
+@@ -6,6 +6,8 @@
+ #include "searchpath.h"
+ #include "pathsupport.h"
+ 
++#include <cstdio>
++
+ using namespace std;
+ 
+ const char *get_homedir()
+--- ./support/searchpath.cpp	2008-07-15 18:05:00.000000000 -0400
++++ ./support/searchpath.cpp.oden	2011-11-20 05:42:41.130037132 -0500
+@@ -8,6 +8,8 @@
+ 
+ #include "searchpath.h"
+ 
++#include <cstdio>
++
+ using namespace std;
+ 
+ class SearchPathInstance
