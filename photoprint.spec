@@ -18,7 +18,7 @@ BuildRequires:	lcms-devel
 BuildRequires:	libtiff-devel
 BuildRequires:	libjpeg-devel
 BuildRequires:	libnetpbm-devel
-BuildRequires:	libcups-devel
+BuildRequires:	cups-devel
 BuildRequires:	libgutenprint-devel
 BuildRequires:	libgtk+2.0-devel
 BuildRequires:	desktop-file-utils
@@ -107,3 +107,73 @@ rm -fr %buildroot
 %_mandir/man*/*
 %_datadir/photoprint
 %_datadir/applications/fotoprint.desktop
+
+
+%changelog
+* Sun Nov 20 2011 Oden Eriksson <oeriksson@mandriva.com> 0.3.9-1mdv2012.0
++ Revision: 731945
+- 0.3.9
+- fix build
+- rebuilt against libnetpbm.so.11
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Sun Jun 15 2008 Frederik Himpe <fhimpe@mandriva.org> 0.3.8-1mdv2009.0
++ Revision: 219261
+- update to new version 0.3.8
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Mon Dec 10 2007 Guillaume Rousse <guillomovitch@mandriva.org> 0.3.6-1mdv2008.1
++ Revision: 116943
+- new version
+  drop old menu
+  spec cleanup
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - use %%mkrel
+
+  + Marcelo Ricardo Leitner <mrl@mandriva.com>
+    - Import photoprint
+
+
+
+* Tue Feb 21 2006 Till Kamppeter <till@mandriva.com> 0.3.1-1mdk
+- Updated to version 0.3.1 (Dedicated profile selector, path editor widget,
+  image selector, new "Paths" dialog for selecting profile and border paths,
+  batch mode fixed, various bug fixes).
+
+* Tue Nov  1 2005 Till Kamppeter <till@mandriva.com> 0.3.0-1mdk
+- Updated to version 0.3.0 (Color management improvements, bug fixes).
+
+* Sat Aug 27 2005 Till Kamppeter <till@mandriva.com> 0.2.9-2mdk
+- Improved package description.
+
+* Sat Aug 27 2005 Till Kamppeter <till@mandriva.com> 0.2.9-1mdk
+- Updated to version 0.2.8 (Changing of of modes for many/all photos,
+  canceling of transfer between layouts possible).
+- Added photoprint borders and profiling kit.
+
+* Sat Aug 13 2005 Till Kamppeter <till@mandriva.com> 0.2.8-2mdk
+- Rebuilt for new Gutenprint.
+
+* Sat Aug 13 2005 Till Kamppeter <till@mandriva.com> 0.2.8-1mdk
+- Updated to version 0.2.8 (Some bug fixes, optimized compilation works 
+  now.).
+- Activated optimized compilation again.
+- New home page and download URLs.
+
+* Tue Jul 25 2005 Till Kamppeter <till@mandriva.com> 0.2.7-1mdk
+- Updated to version 0.2.7 (Many bug fixes and improvements).
+- Do not do any compiler optimizations, they break the program.
+
+* Sun Jul 17 2005 Till Kamppeter <till@mandriva.com> 0.2.6-1mdk
+- initial release.
