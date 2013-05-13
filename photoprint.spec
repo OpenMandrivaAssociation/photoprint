@@ -15,11 +15,11 @@ Patch2:		photoprint-0.3.9-glib_bork.diff
 Patch3:		photoprint-0.3.9-netpbm.diff
 Url:		http://www.blackfiveservices.co.uk/PhotoPrint/About.shtml
 BuildRequires:	lcms-devel
-BuildRequires:	libtiff-devel
-BuildRequires:	libjpeg-devel
-BuildRequires:	libnetpbm-devel
+BuildRequires:	pkgconfig(libtiff-4)
+BuildRequires:	jpeg-devel = 1:1.2.1-5:2013.0
+BuildRequires:	netpbm-devel = 10.57.01-2
 BuildRequires:	cups-devel
-BuildRequires:	libgutenprint-devel
+BuildRequires:	pkgconfig(gutenprint)
 BuildRequires:	libgtk+2.0-devel
 BuildRequires:	desktop-file-utils
 BuildRequires:	autoconf automake libtool
