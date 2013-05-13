@@ -2,7 +2,7 @@
 
 Name:		photoprint
 Version:	0.3.9
-Release:	%mkrel 1
+Release:	2
 Summary:	Prints photos in various layouts and with color management
 License:	GPL
 Group:		Publishing
@@ -23,7 +23,6 @@ BuildRequires:	pkgconfig(gutenprint)
 BuildRequires:	libgtk+2.0-devel
 BuildRequires:	desktop-file-utils
 BuildRequires:	autoconf automake libtool
-BuildRoot:	%_tmppath/%name-%version
 
 %description
 Photo Print is a utility for printing images via Gutenprint (a
