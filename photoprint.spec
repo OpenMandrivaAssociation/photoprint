@@ -2,7 +2,7 @@
 
 Name:		photoprint
 Version:	0.3.9
-Release:	2
+Release:	3
 Summary:	Prints photos in various layouts and with color management
 License:	GPL
 Group:		Publishing
@@ -20,7 +20,7 @@ BuildRequires:	jpeg-devel = 1:1.2.1-5:2013.0
 BuildRequires:	netpbm-devel = 10.57.01-2
 BuildRequires:	cups-devel
 BuildRequires:	pkgconfig(gutenprint)
-BuildRequires:	libgtk+2.0-devel
+BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	desktop-file-utils
 BuildRequires:	autoconf automake libtool
 
