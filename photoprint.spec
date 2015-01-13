@@ -2,7 +2,7 @@
 
 Name:		photoprint
 Version:	0.3.9
-Release:	4
+Release:	5
 Summary:	Prints photos in various layouts and with color management
 License:	GPL
 Group:		Publishing
@@ -14,7 +14,7 @@ Patch1:		photoprint-0.3.9-gcc4.x.diff
 Patch2:		photoprint-0.3.9-glib_bork.diff
 Patch3:		photoprint-0.3.9-netpbm.diff
 Url:		http://www.blackfiveservices.co.uk/PhotoPrint/About.shtml
-BuildRequires:	lcms-devel
+BuildRequires:	pkgconfig(lcms2)
 BuildRequires:	pkgconfig(libtiff-4)
 BuildRequires:	jpeg-devel
 BuildRequires:	netpbm-devel
