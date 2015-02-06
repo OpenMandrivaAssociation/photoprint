@@ -2,7 +2,7 @@
 
 Name:		photoprint
 Version:	0.3.9
-Release:	5
+Release:	6
 Summary:	Prints photos in various layouts and with color management
 License:	GPL
 Group:		Publishing
