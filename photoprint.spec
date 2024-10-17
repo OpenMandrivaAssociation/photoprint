@@ -13,7 +13,7 @@ Patch0:		photoprint-0.3.8-fmtstr.diff
 Patch1:		photoprint-0.3.9-gcc4.x.diff
 Patch2:		photoprint-0.3.9-glib_bork.diff
 Patch3:		photoprint-0.3.9-netpbm.diff
-Url:		http://www.blackfiveservices.co.uk/PhotoPrint/About.shtml
+Url:		https://www.blackfiveservices.co.uk/PhotoPrint/About.shtml
 BuildRequires:	pkgconfig(lcms2)
 BuildRequires:	pkgconfig(libtiff-4)
 BuildRequires:	jpeg-devel
