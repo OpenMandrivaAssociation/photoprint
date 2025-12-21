@@ -14,6 +14,8 @@ Patch1:		photoprint-0.3.9-gcc4.x.diff
 Patch2:		photoprint-0.3.9-glib_bork.diff
 Patch3:		photoprint-0.3.9-netpbm.diff
 Url:		https://www.blackfiveservices.co.uk/PhotoPrint/About.shtml
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:	pkgconfig(lcms2)
 BuildRequires:	pkgconfig(libtiff-4)
 BuildRequires:	jpeg-devel
